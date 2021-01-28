@@ -23,6 +23,8 @@ top: 50%;left: 50%;， 是以左上角为原点，故不处于中心位置
 	height: 60px;
 	background: #eeeeee;
 }
+.active{position: relative;
+	right: -70px;}
 .item div{
 	width: 170px;
 	height: 60px;
@@ -31,7 +33,6 @@ top: 50%;left: 50%;， 是以左上角为原点，故不处于中心位置
 	font-size: 18px;
 	text-align: center;
 	line-height: 60px;
-	cursor: pointer;
 }
 .content{
 	width: 100%;

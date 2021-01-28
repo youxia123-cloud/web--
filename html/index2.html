@@ -9,21 +9,18 @@
 <body>
 		<div class="control">
 			<div class="item">
-				<div class="active">登录</div><div>注册</div>
+				<div class="active">登录</div>
 			</div>
 			<div class="content">
 				<div style="display: block;">
-					<iframe id="id_iframe" name="iframeName" style="display:none;"></iframe>
-					<!--iframe 元素会创建包含另外一个文档的内联框架（即行内框架）-->
-					<form action="http://musicapi.leanapp.cn/login/cellphone"  id="form" target="iframeName">
 					<p>账号</p>
-                    <input type="text" placeholder="用户名" name="phone" id="yhm">
+                    <input type="text" placeholder="用户名" name="phone" id="adminName">
                     <!--placeholder 属性提供可描述输入字段预期值的提示信息(hint)。 该提示会在输入字段为空时显示,并会在字段获得焦点时消失-->
 					<p>密码</p>
-					<input type="password" placeholder="password" name="password" id="mm">
+					<input type="password" placeholder="password" name="password" id="psw">
 					<br/>
-					<input type="submit" value="登录" id="tj" >
-					</form>
+					<input type="submit" value="登录" id="submit" >
+
 				</div>
 			</div>
 		</div>
