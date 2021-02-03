@@ -16,7 +16,7 @@ location=no 是否显示地址栏，yes为允许；
 status=no 是否显示状态栏内的信息（通常是文件已经打开），yes为允许*/
 //实例化XMLHttpRequest对象
 const xhr=new XMLHttpRequest();
-xhr.open('get','http://musicapi.leanapp.cn/top/playlist?limit=10&order=new',true);//初始化一个get请求
+xhr.open('get','http://musicapi.leanapp.cn/personalized?limit=8',true);//初始化一个get请求
 xhr.onreadystatechange = ()=> {
     if(xhr.readyState ===4){
         if((xhr.status >= 200 &&xhr.status < 300)||xhr.status ==304){
@@ -25,15 +25,18 @@ xhr.onreadystatechange = ()=> {
             console.log(res);
             var div = document.querySelector('#content');
             var html = '';
-            res.playlists.forEach(function(item){     //循环数组
+            let i=8
+            res.result.forEach(function(item){     //循环数组
                 //console.log(item);
                 html += `
                     <div>
                     <ul>
-                    <li><img src="${item.coverImgUrl}"></li>
+                    <li><img src="${item.picUrl}"></li>
                     </ul>
-                    <p>${item.name}</p>
+                    <p><a href="../html/index${i}.html">${item.name}</a></p>
                     </div>   `
+                    i++;
+                    
             })
             div.innerHTML= html;
         }else{
