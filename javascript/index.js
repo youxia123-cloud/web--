@@ -29,7 +29,7 @@ xhr.onreadystatechange = ()=> {
             res.result.forEach(function(item){     //循环数组
                 //console.log(item);
                 html += `
-                    <div>
+                    <div id="div${i}" count="${item.id}">
                     <ul>
                     <li><img src="${item.picUrl}"></li>
                     </ul>
@@ -37,8 +37,15 @@ xhr.onreadystatechange = ()=> {
                     </div>   `
                     i++;
                     
+                    
             })
             div.innerHTML= html;
+            function fn(){
+                var text = document.getElementById("div8")
+            var ele=text.getAttribute('count');
+            return ele
+            }
+            return fn
         }else{
             console.log("请求失败");
         }

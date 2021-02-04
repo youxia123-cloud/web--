@@ -143,7 +143,7 @@ function getStyle(ele, style) {
                       flag = true;
                       //拿到元素身上的索引
                       index = target.getAttribute('point_index') - 0;
-                      console.log(index)
+                      //console.log(index)
                       //调用move函数
                       move(imgBox,{left:-index * banner_width},mmoveEnd)
                       
