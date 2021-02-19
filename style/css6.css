@@ -1,25 +1,25 @@
 *{margin: 0;
     padding: 0;
     }
-#header{background-color:black;font-size: 35px;
+    #header{background-color:black;font-size: 35px;
             color: white}
-.header1 li{list-style: none;     /*消除默认样式*/
+    .header1 li{list-style: none;     /*消除默认样式*/
             background-color: black;
             float: left;
             color: white;
             padding: 10px;}
-.logo{float: left;
+    .logo{float: left;
         height: 66px;
         width: 70px;
         background-color: black;
     }
-.logo1{
+    .logo1{
         width: 60px;
         height: 60px;
         border-radius: 30px;           /*边框圆角*/
         background:red;
         border: 2px solid #789cb6;} /*solid是边框实线*/
-.logo2{width: 56px;
+    .logo2{width: 56px;
         height: 56px;
         border-radius: 28px;
         background-color: rgba(67, 238, 250, 0.541);
@@ -27,26 +27,26 @@
         height: 48px;
         left: 3px;
         top: 7px;}
-.logo3{width: 30px;
+    .logo3{width: 30px;
         height: 30px;
         position: relative;
         left: 13px;
         top: 10px;
         background:rgb(86, 196, 240);
         border-radius: 10px;}
-.site-search{
+    .site-search{
         float:right;
         width:300px;
         height:100px;}
-#search{
+    #search{
         position:relative;
         top: -10px;
         right: 130px;
         margin-top:20px;}
-#search input{
+    #search input{
         padding-right:10px;
         height: 50px;}
-#search button{
+    #search button{
         position:absolute;
         right:60px;
         top:-10px;
@@ -57,14 +57,14 @@
         background:url("../images/search.png") no-repeat scroll right center transparent ;/*设置背景图片是否随着文字移动而移动*/
         direction:ltr;
         text-indent:-9999em;}
-.login{position: absolute;
+    .login{position: absolute;
         right: 30px;
         top: 10px;
         background-color: black;
         height: 50px;
         width: 70px;  
         color: white;}/*color设置文字颜色*/
-.creator_Center{position: absolute;
+    .creator_Center{position: absolute;
         right: 115px;
         top: 10px;
         background-color: black;
@@ -72,14 +72,14 @@
         width: 75px;
         color: white;
         border-radius: 25px;}
-#nav{position: absolute; 
+    #nav{position: absolute; 
         top: 66px;
         left: auto;
         background-color: red;
         width: 100%;
         height: 60px;
     }
-#nav1 li{float: left;
+    #nav1 li{float: left;
         list-style: none;
         color: black;
         margin-top: 9px;
@@ -93,84 +93,44 @@
         border-radius: 20px;
         background-color: rgba(235, 26, 26, 0.623);
     }
-ul{list-style: none;}
-#content{position: absolute;
-        width: 70%;
-        height: 3000px;
-        top: 570px;
-        left: 15%;
-        background-color: rgba(228, 224, 224, 0.384);
-        overflow: auto;
-    }
-a{
-    text-decoration: none;
-    color: black;
-}
-#img{
-        width: 1000px;
-        height: 300px;
-        position: absolute;
-        top: 200px;
-        left: 152px;
-}
-#img > img{
-        width: 300px;
-        height: 300px;
-        position: relative;
-}
-#img >h1{
-        position: relative;
-        top: -300px;
-        left: 330px;
-        font-size: 30px;
-}
-#img >p{
-        position: relative;
-        top: -270px;
-        left: 330px;
-        font-size: 30px;
-}
-#comment{
-        position: absolute;
-        left: 5%;
-        top: 3500px;
-        width: 90%;
-        height: 70px;
-        font-size: 30px;
-        background-color: seashell;
-}
-#footer{
-        height: 1900px;
+    ul{list-style: none;}
+    #content{position: absolute;
         width: 80%;
-        position: absolute;
-        left: 10%;
-        top: 3590px;
-        background-color:seashell;
-}
-#footer >div>img{
-        width: 50px;
-        height: 50px;
-}
-#footer > div>span{
-        position: relative;
-        left: 50px;
-        top: -35px;
-}
-#footer > div >p{
-        position: relative;
-        left: 50px;
-        top: 60px;
-}
-#list{
-        background-color:seashell;
-        height: 3000px;
-        width: 100px;
-        position: absolute;
+        height: 7000px;
         top: 570px;
-        left: 170px;
-        overflow: auto;
-
-}
-#list >div{
-        padding-top: 10px;
-}
+        left: 10%;
+        background-color: rgba(228, 224, 224, 0.384);
+    }
+    #content  >div{float: left;
+        width: 200px;
+        height: 200px;
+        padding-left: -10px;  /*内边距*/
+        margin-left: 450px;  /*外边距*/
+        margin-top: 70px;
+        font-size: 15px;
+        text-align: center;}
+    a{text-decoration: none;
+        color: black;}
+    ul,ol,li{list-style: none;}
+    .search{
+        background-color: whitesmoke;
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        left: 600px;
+        top: 180px;
+    }
+    .search > input{
+        width: 230px;
+        height: 45px;
+        position: relative;
+        left: 20px;
+        top: 30px;
+    }
+    .search > button{
+        width: 55px;
+        height: 50px;
+        position: relative;
+        left: 40px;
+        top: 30px;
+    }

@@ -53,3 +53,7 @@ xhr.onreadystatechange = ()=> {
 };
 //发送请求
 xhr.send();
+var btn = document.querySelector('.submit');
+btn.onclick= function(){
+    window.location.assign("../html/index7search.html")
+}
