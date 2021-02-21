@@ -9,13 +9,13 @@ xhr.onreadystatechange = ()=> {
             console.log(res);
             var div1=document.getElementById('img');
             var text=`
-                <img src="${res.result[1].picUrl}">
-                <h1>${res.result[1].name}</h1>
-                <p>${res.result[1].copywriter}</p>
+                <img src="${res.result[6].picUrl}">
+                <h1>${res.result[6].name}</h1>
+                <p>${res.result[6].copywriter}</p>
                 `
             div1.innerHTML=text;
 
-            var ele=res.result[1].id
+            var ele=res.result[6].id
             console.log(ele)
             //实例化XMLHttpRequest对象
 const xhr1=new XMLHttpRequest();

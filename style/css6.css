@@ -13,27 +13,10 @@
         width: 70px;
         background-color: black;
     }
-    .logo1{
-        width: 60px;
-        height: 60px;
-        border-radius: 30px;           /*边框圆角*/
-        background:red;
-        border: 2px solid #789cb6;} /*solid是边框实线*/
-    .logo2{width: 56px;
-        height: 56px;
-        border-radius: 28px;
-        background-color: rgba(67, 238, 250, 0.541);
-        position: relative;          /*相对定位*/
-        height: 48px;
-        left: 3px;
-        top: 7px;}
-    .logo3{width: 30px;
-        height: 30px;
-        position: relative;
-        left: 13px;
-        top: 10px;
-        background:rgb(86, 196, 240);
-        border-radius: 10px;}
+    .logo >img{
+        width: 70px;
+        height: 66px;
+    }
     .site-search{
         float:right;
         width:300px;

@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>9</title>
+    <title>网愈云音乐</title>
+    <link rel="stylesheet" type="text/css" href="../style/css5.css">
 </head>
 <body>
-    
+    <!--
+        这是具体的歌单页面一，对应index页面中歌单下面链接页面,对应外联css为css5.css，对应外联js为index7.js
+    -->
+    <div id="header">
+        <ul class="header1">
+            <div class="logo">
+                <img src="../images/logo.png" alt="logo">
+            </div>
+            <li>网愈云音乐</li>
+            <li>发现音乐</li>
+            <li>我的音乐</li>
+            <li>朋友</li>
+            <li>商城</li>
+            <li>音乐人</li>
+            <li>下载客户端</li>
+        </ul>
+    </div>
+    <div id="nav">
+        <ul id="nav1">
+            <li><a href="index.html">推荐</a></li>
+            <li><a href="index6rankingList.html">排行榜</a></li>
+            <li><a href="index5songList.html">歌单</a></li>
+            <li>主播电台</li>
+            <li>歌手</li>
+            <li>新碟上架</li>
+        </ul>
+    </div>
+    <div class="site-search">
+        <div id="search">
+            <input type="text" name="value" class="text" placeholder="输入关键字搜索" />
+            <!--placeholder 属性提供可描述输入字段预期值的提示信息（hint）。该提示会在输入字段为空时显示，并会在字段获得焦点时消失-->
+            <button type="submit"  class="submit">搜索</button>
+        </div>
+    </div>
+    <button type="submit" class="creator_Center">创作者中心</button>
+    <div id="img"></div>
+    <div id="content"></div>
+    <div id="player">
+        <button id="btn1">|&gt;</button>     <!--&gt是转义字符表示>的意思-->
+        <button id="btn2">||</button>
+        <button id="btn3">&Delta;</button>
+        <button id="btn4">&lt;|</button>
+
+    </div>
+    <div id="comment">
+        <u>评论区</u>
+    </div>
+    <div id="footer"></div>
+    <div id="list"></div>
+   
+    <script src="../javascript/index7.js"></script>
+    <script src="../javascript/index7.1.js"></script>
 </body>
 </html>
