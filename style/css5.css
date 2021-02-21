@@ -133,7 +133,7 @@ a{
 #comment{
         position: absolute;
         left: 5%;
-        top: 3500px;
+        top: 4000px;
         width: 90%;
         height: 70px;
         font-size: 30px;
@@ -144,7 +144,7 @@ a{
         width: 80%;
         position: absolute;
         left: 10%;
-        top: 3590px;
+        top: 4090px;
         background-color:seashell;
 }
 #footer >div>img{
@@ -167,10 +167,43 @@ a{
         width: 100px;
         position: absolute;
         top: 570px;
-        left: 170px;
+        left: 125px;
         overflow: auto;
 
 }
 #list >div{
         padding-top: 10px;
+}
+#content > div > span{
+        padding-top: -10px;
+        padding-bottom: 20px;
+        margin-top: 40px;
+}
+#player{
+        position: absolute;
+        top: 3600px;
+        left: 200px;
+        width: 100%;
+        height: 200px;
+        background-color:whitesmoke;
+}
+#player >button{
+        width: 45px;
+        height: 40px;
+        background-color:whitesmoke;
+        font-size: 20px;
+        margin-left: 25px;
+}
+#btn3{
+        transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            /* Internet Explorer 9*/
+            -moz-transform: rotate(90deg);
+            /* Firefox */
+            -webkit-transform: rotate(90deg);
+            /* Safari 和 Chrome */
+            -o-transform: rotate(90deg);
+            /* Opera */
+            width: 45px;
+            height: 40px;
 }

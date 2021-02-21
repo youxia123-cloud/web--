@@ -28,15 +28,62 @@ xhr1.onreadystatechange = ()=> {
            console.log(res);
            var div = document.querySelector('#content');
            var html='';
+           let i=1;
            res.playlist.trackIds.forEach(function(item){
             html +=`
                     <div>
+                    <span>${i}</span>
                     <audio controls>
                     <source src="https://music.163.com/song/media/outer/url?id=${item.id}.mp3" type="audio/mp3">
                     </audio>
                     </div>`
+                    i++;
            })
            div.innerHTML = html;
+           var x=document.getElementsByTagName('audio');
+           var btn1=document.querySelector('#btn1')
+btn1.onclick=function(){
+    for(i=0;i<x.length;i++){
+        if(x[i].currentTime!=0){
+            x[i].currentTime=0;
+            x[i].pause();
+            if(i==0){
+                x[0].play();
+                return
+            }
+            x[i-1].play();
+        }
+    }
+}
+var btn2=document.querySelector('#btn2');
+btn2.onclick=function(){
+    for(i=0;i<x.length;i++){
+        x[i].pause();
+    }
+   
+}
+var btn3=document.querySelector('#btn3');
+btn3.onclick=function(){
+    for(i=0;i<x.length;i++){
+        if(x[i].currentTime!=0){
+            x[i].play();
+        }
+    }
+}
+var btn4=document.querySelector('#btn4');
+btn4.onclick=function(){
+        for(i=0;i<x.length;i++){
+            if(x[i].currentTime!=0){
+                x[i].currentTime=0;
+                x[i].pause();
+                if(i==x.length-1){
+                    x[x.length-1].play();
+                    return
+                }
+                x[i+1].play();
+            }
+        }
+    }
 
 
            //实例化XMLHttpRequest对象
