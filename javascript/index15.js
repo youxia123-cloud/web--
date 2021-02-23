@@ -3,11 +3,11 @@ let btnLogin=document.querySelector('.creator_Center');
 btnLogin.onclick = function(){
     window.open("../html/index1.html");
 }
-let btnLogin1=document.querySelector('.login');
+/* let btnLogin1=document.querySelector('.login');
 btnLogin1.onclick = function(){
     window.open("../html/index2.html","登录",
             "height=600px,width=700px,top=30px, left=430px, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no")
-}
+} */
 /*top=0 窗口距离屏幕上方的象素值
 left=0 窗口距离屏幕左侧的象素值
 toolbar=no 是否显示工具栏，yes为显示；
